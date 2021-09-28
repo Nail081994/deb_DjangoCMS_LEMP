@@ -1,0 +1,66 @@
+ dpkg-buildpackage -us -uc -ui -b
+dpkg-buildpackage: info: source package djangocms-package
+dpkg-buildpackage: info: source version 0.2
+dpkg-buildpackage: info: source distribution unstable
+dpkg-buildpackage: info: source changed by Nail Rustamov <nailbetter@gmail.com>
+ dpkg-source --before-build .
+dpkg-buildpackage: info: host architecture amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ debian/rules build
+dh build
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+ debian/rules binary
+dh binary
+   dh_testroot
+   dh_prep
+   debian/rules override_dh_install
+make[1]: Entering directory '/home/nail/deb_packaging/djangocms-package-0.2'
+mkdir -p debian/djangocms-package-0.1/
+touch debian/djangocms-package-0.1/emptyfile
+rm -f debian/djangocms-package-0.1/emptyfile
+mkdir -p debian/djangocms-package-0.1/root/.ssh
+mkdir -p debian/djangocms-package-0.1/usr/bin/
+mkdir -p debian/djangocms-package-0.1/etc/cron.d/
+mkdir -p debian/djangocms-package-0.1/etc/nginx/conf.d/
+mkdir -p debian/djangocms-package-0.1/etc/nginx/sites-enabled/
+mkdir -p debian/djangocms-package-0.1/etc/nginx/sites-availible/
+mkdir -p debian/djangocms-package-0.1/var/lib/postgresql/12/main/
+mkdir -p debian/djangocms-package-0.1/home/nail/myprojectdir/
+cp sources/authorized_keys debian/djangocms-package-0.1/root/.ssh/authorized_keys
+cp -r sources/nginx/* debian/djangocms-package-0.1/etc/nginx/
+cp -r sources/cron/* debian/djangocms-package-0.1/etc/cron.d/
+cp sources/bin/* debian/djangocms-package-0.1/usr/bin/
+cp -r sources/postgresql/12/main/* debian/djangocms-package-0.1/var/lib/postgresql/12/main/
+cp -r sources/myprojectdir/* debian/djangocms-package-0.1/home/nail/
+ln -sf debian/djangocms-package-0.1/etc/nginx/sites-availible/myproject debian/djangocms-package-0.1/etc/nginx/sites-enabled/myproject
+chmod +x debian/djangocms-package-0.1/usr/bin/*
+make[1]: Leaving directory '/home/nail/deb_packaging/djangocms-package-0.2'
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: building package 'djangocms-package' in '../djangocms-package_0.2_all.deb'.
+ dpkg-genbuildinfo --build=binary
+ dpkg-genchanges --build=binary >../djangocms-package_0.2_amd64.changes
+dpkg-genchanges: info: binary-only upload (no source code included)
+ dpkg-source --after-build .
+dpkg-buildpackage: info: binary-only upload (no source included)
+Now signing changes and any dsc files...
+ signfile buildinfo djangocms-package_0.2_amd64.buildinfo Nail Rustamov <nailbetter@gmail.com>
+
+ fixup_changes buildinfo djangocms-package_0.2_amd64.buildinfo djangocms-package_0.2_amd64.changes
+ signfile changes djangocms-package_0.2_amd64.changes Nail Rustamov <nailbetter@gmail.com>
+
+Successfully signed buildinfo, changes files

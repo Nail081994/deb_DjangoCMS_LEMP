@@ -1,0 +1,44 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Format: 1.8
+Date: Tue, 28 Sep 2021 17:56:52 +0300
+Source: djangocms-package
+Binary: djangocms-package
+Architecture: all
+Version: 0.2
+Distribution: unstable
+Urgency: low
+Maintainer: Rustamov Nail  <nailbetter@gmail.com>
+Changed-By: Nail Rustamov <nailbetter@gmail.com>
+Description:
+ djangocms-package - <insert up to 60 chars description>
+Changes:
+ djangocms-package (0.2) unstable; urgency=low
+ .
+   * changes, we are made in this version
+   * another changes in this version
+Checksums-Sha1:
+ 0f017fd8a03641cd02d1b7ddf2cdc080312bdb5a 2632 djangocms-package_0.2_all.deb
+ 6427335741a1e7ae4aaa454cd0d51150248dec5b 9346 djangocms-package_0.2_amd64.buildinfo
+Checksums-Sha256:
+ 423b31507975b3a32cca6d4a965c09adfb06d3f4126d3e0b3c7606e1b3366707 2632 djangocms-package_0.2_all.deb
+ bdbb179893214e8e0c93e0c92d5ffad7ff08d214a3472e40eda2aeed7bfa5975 9346 djangocms-package_0.2_amd64.buildinfo
+Files:
+ c6e4d546b016235e574b75b6978a2856 2632 misc extra djangocms-package_0.2_all.deb
+ b95e457bf33235f97873223547068a04 9346 misc extra djangocms-package_0.2_amd64.buildinfo
+
+-----BEGIN PGP SIGNATURE-----
+
+iQHJBAEBCgAzFiEEmxVRynYnMUOaWZh92dkL3+hGlCEFAmFTSAAVHG5haWxiZXR0
+ZXJAZ21haWwuY29tAAoJENnZC9/oRpQh4FQMALgrG4CNVdZE0A2oytYbeqKGru4o
+q9NBN7gpp2Kx8lWjETD25Dc5UE4LIxZZ+IQvcFNuRl+ATpApnXZFqofXQa/LfHpd
+pRQhldxk0lSLPqka47ii2D9HoBiIgQJse72v8rJtLOFOaJZParEiMPRMBVcG8Ck6
+/n60ed9yFEaXaYjNAtaKOr65izgjJv1vu5IsRx+pWQeEFDJveHEscFUL0NPttL2i
+qZy+BU9tXzo7X09yQEly2764Ixf9k8LlKEbiJAYS8xrAbPcNzcFxinCEqyFFFzhi
+3VCXlog5K/luCXjofD8MvMuwngJ6ohPlOZWQdYbpPwI0KEu3W4O3QsvuAGgT85uO
+Q7+wfeRuhByLTz90T8Z84wigVWKq+ehFBxd67128k7NOP5UW4Sctn3aFNU+GWl50
+9xs+sdsF2Z7mTji6Mvgx15vfDzgGB/9iH6iNC9cxRMxGSZTWVSBwuNo7MLQeTgEf
+EBvxIx2fMwi42lkThnenVIEDd/nCEuMqLevfaQ==
+=NyfY
+-----END PGP SIGNATURE-----
